@@ -1,0 +1,365 @@
+.fix{
+	position: fixed;
+	bottom: 15%;right: 0;
+	z-index: 99999;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background: #fff;
+	color: #000;
+	text-align: center;
+}
+.header{
+	position: fixed;
+	top: 0;left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background:#1c92d1;
+	padding-left:80px;
+}
+.header .left{
+	float: left;
+}
+.header .left img{
+	float: left;
+	margin-top: 10px;
+	height: 40px;
+}
+.header .left>ul{
+	float: left;
+	color: #fff;
+	font-size: 16px;
+}
+.header .left>ul>li{
+	float: left;
+	text-align: center;
+	width: 100px;
+}
+.header .left>ul>li>ul{
+	width: 100px;
+	background: #fff;
+	padding-bottom: 10px;
+	display: none;
+}
+.header .left>ul>li:hover ul{
+	display: block;
+}
+.header .left>ul>li>ul>li{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #ddd;
+}
+.header .left>ul>li>ul>li a{
+	color: #1c92d1;
+}
+.header .right{
+	float: right;
+	font-size: 16px;
+	margin-right: 80px;
+}
+.header .right p{
+	float: left;
+	width: 100px;
+	color: #fff;
+	text-align: center;
+}
+.header .right .shop{
+	position: relative;
+	padding-left: 32px;
+	width: 150px;
+}
+.header .right .shop img{
+	width: 30px;
+	position: absolute;
+	top: 15px;left: 32px;
+}
+.header .right .ss{
+	width: 60px;
+	height: 60px;
+	background: #599d2c;
+}
+.header .right .ss img{
+	width: 30px;
+	margin-top: 15px;
+}
+.main .div1{
+	background: #e8e8e8;
+	text-align: center;
+}
+.main .div1 img{
+	/*margin-top: 60px;*/
+	height: 100%;	
+}
+.main .div1 .img4 img{
+	width: 100%;
+	height: 100%;	
+}
+.div2{
+	width: 100%;
+	height: 100%;
+}
+.div2 div{
+	float: left;
+	height: 100%;
+	overflow: hidden;
+}
+.div2 .div2-1,.div2 .div2-2{
+	width: 50%;
+	position: relative;
+}
+.div2 .img1,.img2{
+	width: 100%;
+	height: 100%;
+	transition: all 500ms ease-in-out;
+}
+.div2 .img1:hover,.div2 .img2:hover{
+	width: 103%;
+	height: 103%;
+}
+.div2 .div2-1:hover img.icon1,.div2 .div2-2:hover img.icon2{
+	width: 51.5%;
+}
+.div2 .icon1,.div2 .icon2{
+	position: absolute;
+	z-index: 9999;
+	width: 50%;
+	bottom: 10%;left: 25%;
+	transition: all 500ms ease-in-out;
+}
+.div3{
+	position: relative;
+	width: 100%;
+	background: url(../img/div3-1.jpg) no-repeat;
+	background-size: 100%;
+	background-position:0 -100px ;
+}
+.div4{
+	background: url(../img/div4-1.jpg) no-repeat;
+	background-size: 100%;
+}
+.div3>div{
+	width: 500px;
+	color: #ffae00;
+	position: absolute;
+	left: 20%;top: 45%;
+}
+.div3 .p1{
+	transform:scale(0)translate3d(0,0,0);
+	transition: transform 500ms ease-in;
+}
+.div3 .p2{
+	transform:scale(0)translate3d(0,0,0);
+	transition: transform 1000ms ease-in;
+}
+.div3 .p3{
+	transform:scale(0)translate3d(0,0,0);
+	transition: transform 1000ms ease-in;
+}
+.div3 .p4{
+	transform:scale(0)translate3d(0,0,0);
+	transition: transform 1500ms ease-in;
+}
+.div3 .p1.active,.div3 .p2.active,.div3 .p3.active,.div3 .p4.active{
+	transform: scale(1)translate3d(135%,0,0);
+}
+.div3 .p1{
+	top: 40%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	padding-left: 90px;
+}
+.div3 .p2:hover{
+	color: #0AA6E8;
+}
+
+.div3 .p1 img{
+	position: absolute;
+	top: 0;left: 0;
+	width: 78px;
+}
+.div3 .p2{
+	font-size: 24px;
+	line-height: 50px;
+}
+.div3 .p3{
+	line-height: 30px;
+}
+.div3 .p4{
+	line-height: 30px;
+}
+.div4{
+	position: relative;
+	width: 350px;
+	color: #1c92d1;
+}
+.div4>div{
+	position: absolute;
+	top: 15%;left:20%;
+}
+.div4 h2{
+	font-size: 28px;
+	line-height: 70px;
+	transform:scale(0)translate3d(0,-300px,0);
+	transition: transform 500ms ease-in;
+}
+.div4 h2.active,.div4 p.active,.div4 .icon3.active{
+	transform:scale(1)translate3d(0,0,0);
+}
+.div4 .p1,.div4 .p2,.div4 .p3,.div4 .p4{
+	line-height: 40px;
+	transform: scale(0)translate3d(0,-300px,0);
+	transition: transform 1000ms ease-in;
+}
+.div4 .icon3{
+	position: absolute;
+	top: 250px;left: 0;
+	width: 500px;
+	transform:scale(0)translate3d(0,-300px,0);
+	transition: transform 2000ms ease-in;
+}
+.div4 .icon4{
+	position: absolute;
+	bottom: 0;left:80%;
+}
+.div5 .img1,.div5 .img3{
+	float: left;
+	width: 33%;
+	height: 100%;
+	position: relative;
+	transition: all 500ms ease-in-out;
+}
+.div5 .img2{
+	float: left;
+	position: relative;
+	width: 34%;
+	height: 100%;
+	transition: all 500ms ease-in-out;
+}
+.div5 .img1{
+	background: url(../img/div5-1.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.div5 .img2{
+	background: url(../img/div5-2.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.div5 .img3{
+	background: url(../img/div5-3.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.div5 img{
+	position: absolute;
+	top: 18%;left: 25%;
+}
+.div5 .img1 img{
+	transform:scale(0)translate3d(0,-300px,0);
+	transition: transform 500ms ease-in;
+}
+.div5 .img2 img{
+	transform:scale(0)translate3d(0,-300px,0);
+	transition: transform 1000ms ease-in;
+}
+.div5 .img3 img{
+	transform:scale(0)translate3d(0,-300px,0);
+	transition: transform 1500ms ease-in;
+}
+.div5 .img1:hover,.div5 .img2:hover,.div5 .img3:hover{
+	background-size:103% 103%;
+}
+.div5 .img1 img.active,.div5 .img2 img.active,.div5 .img3 img.active{
+	transform: scale(1)translate3d(0,0,0);
+}
+.div6{
+	background: url(../img/div5-4.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.div6 a{
+	color: #eee;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+.div6>div{
+	float: left;
+	background:rgba(0,0,0,.5);
+}
+.div6 .top{
+	width: 1200px;
+	margin: 6% auto;
+}
+.div6 .top>ul>li{
+	float: left;
+	padding: 10px 40px;
+}
+.div6 .top>ul>li>a{
+	font-size: 18px;
+	font-weight: bold;
+}
+.div6 .bottom{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 14px;
+	color: #ddd;
+	border-top: 1px solid #ccc;
+}
+.div6 .bottom>div{
+	width: 1200px;
+	margin: 0 auto;
+}
+.div6 .bottom .p1{
+	float: left;
+}
+.div6 .bottom .p2{
+	float: right;
+}
+.div6 .li3{
+	transform: scale(0)translate3d(176px,0,0)rotate(480deg);
+	transition: transform 500ms ease-in;
+}
+.div6 .li1.active,.div6 .li2.active,.div6 .li3.active,.div6 .li4.active,.div6 .li5.active,.div6 .li6.active,.div6 .li7.active{
+	transform: scale(1)translate3d(0,0,0)rotate(0);
+}
+.div6 .li2{
+	transform: scale(0)translate3d(152px,0,0)rotate(480deg);
+	transition: transform 1000ms ease-in;
+}
+.div6 .li1{
+	transform:scale(0)translate3d(152px,0,0)rotate(480deg);
+	transition: transform 1500ms ease-in;
+}
+.div6 .li5{
+	transform: scale(0)translate3d(-152px,0,0)rotate(-480deg);
+	transition: transform 500ms ease-in;
+}
+.div6 .li6{
+	transform: scale(0)translate3d(-304px,0,0)rotate(-480deg);
+	transition: transform 1000ms ease-in;
+}
+.div6 .li7{
+	transform: scale(0)translate3d(-456px,0,0)rotate(-480deg);
+	transition: transform 1500ms ease-in;
+}
+.div6 .li4{
+	transform: scale(0)translate3d(0,0,0)rotate(0);
+	transition: transform 0ms ease-in;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
